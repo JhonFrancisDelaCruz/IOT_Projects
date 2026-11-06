@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: system-ui, sans-serif;
+    background-color: #0f1115;
+    color: #e5e7eb;
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 24px;
+    background-color: #181b22;
+    border-bottom: 1px solid #2a2f3a;
+}
+
+.status.online {
+    color: #22c55e;
+    font-size: 14px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 24px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.card {
+    background-color: #181b22;
+    border: 1px solid #2a2f3a;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.card .label {
+    font-size: 14px;
+    color: #9ca3af;
+}
+
+.card .value {
+    font-size: 28px;
+    font-weight: 600;
+    margin-top: 8px;
+}
+
+.card .badge {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.panel {
+    background-color: #181b22;
+    border: 1px solid #2a2f3a;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.panel + .panel {
+    margin-top: 24px;
+}
+
+.panel h2 {
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    text-align: left;
+    padding: 10px 8px;
+    border-bottom: 1px solid #2a2f3a;
+    font-size: 14px;
+}
+
+th {
+    color: #9ca3af;
+    font-weight: 500;
+}
+
+.badge {
+    padding: 3px 10px;
+    border-radius: 999px;
+    font-size: 12px;
+}
+
+.badge.on {
+    background-color: rgba(34, 197, 94, 0.15);
+    color: #22c55e;
+}
+
+.badge.off {
+    background-color: rgba(239, 68, 68, 0.15);
+    color: #ef4444;
+}
+
+.badge.warn {
+    background-color: rgba(234, 179, 8, 0.15);
+    color: #eab308;
+}
+
+.bar {
+    width: 100%;
+    min-width: 100px;
+    height: 8px;
+    margin-top: 12px;
+    background-color: #2a2f3a;
+    border-radius: 999px;
+    overflow: hidden;
+}
+
+td .bar {
+    margin-top: 0;
+}
+
+.fill {
+    height: 100%;
+    background-color: #22c55e;
+    border-radius: 999px;
+}
+
+.fill.warn {
+    background-color: #eab308;
+}
+
+.fill.bad {
+    background-color: #ef4444;
+}
